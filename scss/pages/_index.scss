@@ -1,0 +1,115 @@
+.info-lugar, .pie-de-pagina {
+  background-color: $color_5;
+}
+
+.partes {
+  padding: 6em;
+  color: $color_1;
+}
+
+.img {
+  width: 40vw;
+  max-height: 100%;
+  box-shadow: 15px 15px $color_6;
+}
+
+.svg{
+  display: inline;
+  width: 30px;
+  height: 30px;
+  margin: 20px;
+  padding: 0;
+}
+
+.inicio {
+  background-image: 
+  linear-gradient(to right,$gradient_black 40% , $gradient_white),
+  url(../../images/foto1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  
+}
+
+.inicio-fondo-imagen, .presentacion__final-container {
+  height: 90vh;
+  display: flex;
+}   
+
+.img-logo {
+  color: $color_1;
+  padding: 1em 6em;
+}
+
+.presentacion {
+  width: 50vw;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+
+.presentacion__titulo {
+  font-size: 3.5rem;
+  line-height: 1.4em;
+}
+
+.presentacion__texto {
+  padding-bottom: .2em;
+}
+
+.beneficios {
+  color: $color_1;
+  padding: 3em 6em;
+  line-height: 1.6em;
+}
+
+.beneficios__container, .info-lugar_container, .info-dueño_container, .pie-de-pagina {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.info-lugar_container, .info-dueño_container {
+  height: 90vh;
+  
+}
+
+.tipo--grande, .info-title {
+  font-size: 2rem;
+}
+
+.info-title {
+  line-height: 1.4em;
+}
+
+.beneficios__tipo--chica {
+  font-size: 1.2rem;
+}
+
+.info-lugar_container {
+  display: flex;
+}
+
+.infos_textos {
+  width: 40vw;
+  line-height: 1.4em;
+}
+
+.final {
+  background-image: 
+  linear-gradient(to right,$gradient_black 40% , $gradient_white),
+  url(../../images/foto3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.presentacion__final {
+  margin: auto;
+  text-align: center;
+}
+
+.redes-container {
+  display: flex;
+  justify-content: space-between;
+}

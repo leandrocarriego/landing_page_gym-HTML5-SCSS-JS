@@ -1,0 +1,230 @@
+@charset "UTF-8";
+/* Reseteamos los margin y paddings de todas las etiquetas */
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  vertical-align: baseline;
+}
+
+/* Evitamos problemas con las imagenes */
+img, picture, video, iframe, figure {
+  max-width: 100%;
+  width: 100%;
+  display: block;
+  -o-object-fit: cover;
+  object-fit: cover;
+  -o-object-position: center center;
+  object-position: center center;
+}
+
+/* Reseteamos los enlaces para funcionar como cajas... */
+a {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  font-size: inherit;
+}
+
+/* ... excepto los que se encuentran en párrafos */
+p a {
+  display: inline;
+}
+
+/* Quitamos los puntos de los <li> */
+li {
+  list-style-type: none;
+}
+
+/* Configuramos # suaves */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Desactivamos estilos por defecto de las principales etiquetas de texto */
+h1, h2, h3, h4, h5, h6, p, span, a, strong, blockquote, i, b, u, em {
+  font-size: 1em;
+  font-weight: inherit;
+  font-style: inherit;
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Evitamos problemas con los pseudoelementos de quotes */
+blockquote:before, blockquote:after, q:before, q:after {
+  content: "";
+  content: none;
+}
+
+/* Nivelamos problemas de tipografías y colocación de formularios */
+form, input, textarea, select, button, label {
+  font-family: inherit;
+  font-size: inherit;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
+  background-color: transparent;
+  color: inherit;
+  display: block;
+}
+
+/* Reseteamos las tablas */
+table, tr, td {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Evitamos problemas con los SVG */
+svg {
+  width: 100%;
+  display: block;
+  fill: currentColor;
+}
+
+/* Configuramos la tipografía para toda la web */
+body {
+  min-height: 100vh;
+  font-size: 100%;
+  line-height: 1.4em;
+  font-smooth: always;
+}
+
+.tipografia-gruesa {
+  font-family: "Barlow", sans-serif;
+  font-weight: 800;
+}
+
+.tipografia-fina {
+  font-family: "Barlow", sans-serif;
+  font-weight: 400;
+}
+
+body {
+  background-color: #1f2327;
+  color: #ffffff;
+}
+
+.boton-rojo {
+  background-color: #e82e2c;
+  border-radius: 5px;
+  display: inline-block;
+  padding: 1em;
+  margin-top: 1em;
+}
+
+footer .pie-de-pagina {
+  color: var(--color_1);
+  height: 15vh;
+  padding: 0 6em;
+}
+
+.info-lugar, .pie-de-pagina {
+  background-color: #191c1f;
+}
+
+.partes {
+  padding: 6em;
+  color: #ffffff;
+}
+
+.img {
+  width: 40vw;
+  max-height: 100%;
+  box-shadow: 15px 15px #e82e2c;
+}
+
+.svg {
+  display: inline;
+  width: 30px;
+  height: 30px;
+  margin: 20px;
+  padding: 0;
+}
+
+.inicio {
+  background-image: linear-gradient(to right, rgba(5, 5, 5, 0.9019607843) 40%, rgba(255, 255, 255, 0.2)), url(../../images/foto1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.inicio-fondo-imagen, .presentacion__final-container {
+  height: 90vh;
+  display: flex;
+}
+
+.img-logo {
+  color: #ffffff;
+  padding: 1em 6em;
+}
+
+.presentacion {
+  width: 50vw;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.presentacion__titulo {
+  font-size: 3.5rem;
+  line-height: 1.4em;
+}
+
+.presentacion__texto {
+  padding-bottom: 0.2em;
+}
+
+.beneficios {
+  color: #ffffff;
+  padding: 3em 6em;
+  line-height: 1.6em;
+}
+
+.beneficios__container, .info-lugar_container, .info-dueño_container, .pie-de-pagina {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.info-lugar_container, .info-dueño_container {
+  height: 90vh;
+}
+
+.tipo--grande, .info-title {
+  font-size: 2rem;
+}
+
+.info-title {
+  line-height: 1.4em;
+}
+
+.beneficios__tipo--chica {
+  font-size: 1.2rem;
+}
+
+.info-lugar_container {
+  display: flex;
+}
+
+.infos_textos {
+  width: 40vw;
+  line-height: 1.4em;
+}
+
+.final {
+  background-image: linear-gradient(to right, rgba(5, 5, 5, 0.9019607843) 40%, rgba(255, 255, 255, 0.2)), url(../../images/foto3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.presentacion__final {
+  margin: auto;
+  text-align: center;
+}
+
+.redes-container {
+  display: flex;
+  justify-content: space-between;
+}/*# sourceMappingURL=main.css.map */
