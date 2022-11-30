@@ -2,28 +2,30 @@ main {
   // Generales
   .container {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
+    align-items: center;
   }
 
   .img-container {
+    width: 100%;
+
+    @include desktop {
+      height: 100%;
+      width: 40vw;
+    }
     .img {
-      width: 100%;
-      
       max-height: 100%;
-      box-shadow: 15px 15px $color_6;
-      @include desktop {
-        width: 40vw;
-      }
+      object-fit: cover;
+      object-position: center;
     }
   }
 
   .info_textos {
-    width: 40vw;
     line-height: 1.4em;
-    .info-title {
-      font-size: 2rem;
-      line-height: 1.4em;
+    width: 100%;
+    @include desktop {
+      height: 100%;
+      width: 40vw;
     }
   }
 
@@ -71,48 +73,43 @@ main {
 
   .info-lugar-section {
     background-color: $color_5;
-    height: 100vh;
     padding: 4em 1.5em;
     display: flex;
-    justify-content: center;
     align-items: center;
     @include desktop {
       height: 90vh;
       padding-left: 6em;
       padding-right: 6em;
     }
-    article {
-      width: 100%;
-      height: 100%;
-      .container {
-        height: 100%;
-        width: 100%;
-        flex-direction: column;
-        align-items: center;
-        @include desktop {
-          flex-direction: row;
-          align-items: center;
+    .container {
+      flex-direction: column;
+      gap: 4em;
+      @include desktop {
+        flex-direction: row;
+      }
+      .img-container {
+        .img {
+          box-shadow: -15px 15px $color_6;
         }
-        .info_textos {
-          width: 100%;
-          h4 {
-            font-size: 1.2rem;
-          }
-          h3 {
-            font-size: 2rem;
-            padding-bottom: 1em;
-          }
-          div {
-            .check {
-              
-              li {
-                font-size: 1.2rem;
-                padding-bottom: .6em;
-                .check-svg {
-                  width: 16px;
-                  height: 16px;
-                  display: inline;
-                }
+      }
+      .info_textos {
+        h4 {
+          font-size: 1.2rem;
+        }
+        h3 {
+          font-size: 2rem;
+          line-height: 1.4;
+          padding-bottom: 1em;
+        }
+        div {
+          .check {
+            li {
+              font-size: 1.2rem;
+              padding-bottom: 0.6em;
+              .check-svg {
+                width: 16px;
+                height: 16px;
+                display: inline;
               }
             }
           }
@@ -122,7 +119,6 @@ main {
   }
 
   .info-dueño-section {
-    height: 100vh;
     padding: 4em 1.5em;
     display: flex;
     justify-content: center;
@@ -132,30 +128,28 @@ main {
       padding-left: 6em;
       padding-right: 6em;
     }
-    article {
-      width: 100%;
-      height: 100%;
-      .container {
-        height: 100%;
-        width: 100%;
-        flex-direction: column;
-        align-items: center;
-        @include desktop {
-          flex-direction: row;
-          align-items: center;
+    .container {
+      flex-direction: column;
+      gap: 4em;
+      @include desktop {
+        flex-direction: row;
+      }
+      .info_textos {
+        h4 {
+          font-size: 1.2rem;
         }
-        .info_textos {
-          width: 100%;
-          h4 {
-            font-size: 1.2rem;
-          }
-          h3 {
-            font-size: 2rem;
-            padding-bottom: .5em;
-          }
+        h3 {
+          font-size: 2rem;
+          line-height: 1.4;
+          padding-bottom: 0.5em;
         }
       }
-    }      
+      .img-container {
+        .img {
+          box-shadow: 15px 15px $color_6;
+        }
+      }
+    }
   }
 
   .final {
@@ -199,7 +193,7 @@ main {
         .titulo {
           font-size: 3.5rem;
           line-height: 1.4em;
-          padding-bottom: .7em;
+          padding-bottom: 0.7em;
         }
         @include desktop {
           max-width: 50vw;
@@ -208,5 +202,4 @@ main {
       }
     }
   }
-
 }

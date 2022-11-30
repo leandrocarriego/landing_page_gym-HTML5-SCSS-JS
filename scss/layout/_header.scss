@@ -27,6 +27,9 @@ header {
                     }
                     .texto {
                         padding-bottom: .2em;
+                        @include desktop {
+                            padding-bottom: 3.5em;
+                        }
                     }
                     @include desktop {
                         width: 50vw;

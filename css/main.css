@@ -131,6 +131,11 @@ header .inicio article .inicio-fondo-imagen .presentacion .texto {
   padding-bottom: 0.2em;
 }
 @media screen and (min-width: 767px) {
+  header .inicio article .inicio-fondo-imagen .presentacion .texto {
+    padding-bottom: 3.5em;
+  }
+}
+@media screen and (min-width: 767px) {
   header .inicio article .inicio-fondo-imagen .presentacion {
     width: 50vw;
     margin-top: auto;
@@ -140,26 +145,75 @@ header .inicio article .inicio-fondo-imagen .presentacion .texto {
 
 footer .footer-container {
   background-color: #191c1f;
-  height: 15vh;
-  padding: 0 6em;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.5em;
 }
-footer .footer-container .img-logo {
+@media screen and (min-width: 767px) {
+  footer .footer-container {
+    flex-direction: row;
+    padding-left: 3em;
+    padding-right: 3em;
+  }
+}
+@media screen and (min-width: 767px) {
+  footer .footer-container .footer-izquierda {
+    width: 40vw;
+  }
+}
+footer .footer-container .footer-izquierda svg {
+  display: inline;
+  width: 1rem;
+  height: 1rem;
+  margin-right: 0.5em;
+}
+footer .footer-container .footer-izquierda div .redes-container {
+  display: flex;
+  justify-content: center;
+}
+@media screen and (min-width: 767px) {
+  footer .footer-container .footer-izquierda div .redes-container {
+    justify-content: left;
+  }
+}
+footer .footer-container .footer-izquierda div .redes-container li a .svg {
+  display: inline;
+  width: 2em;
+  height: 2em;
+  margin: 1em 1.5em 1em 0;
+}
+@media screen and (min-width: 767px) {
+  footer .footer-container .footer-derecha {
+    width: 60vw;
+  }
+}
+footer .footer-container .footer-derecha .mapa {
+  height: 40vh;
+}
+@media screen and (min-width: 767px) {
+  footer .footer-container .footer-derecha .mapa {
+    height: 100%;
+  }
+}
+footer .final-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em;
+}
+@media screen and (min-width: 767px) {
+  footer .final-footer {
+    padding-left: 3em;
+    padding-right: 3em;
+  }
+}
+footer .final-footer .logo-container {
+  padding: 0;
+}
+footer .final-footer .logo-container .img-logo {
   width: 20px;
   height: 20px;
-}
-footer .footer-container .redes-container {
-  display: flex;
-  justify-content: space-between;
-}
-footer .footer-container .redes-container li a .svg {
-  display: inline;
-  width: 30px;
-  height: 30px;
-  margin: 20px;
-  padding: 0;
 }
 
 .boton-rojo {
@@ -196,26 +250,32 @@ footer .footer-container .redes-container li a .svg {
 
 main .container {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
+  align-items: center;
 }
-main .img-container .img {
+main .img-container {
   width: 100%;
-  max-height: 100%;
-  box-shadow: 15px 15px #e82e2c;
 }
 @media screen and (min-width: 767px) {
-  main .img-container .img {
+  main .img-container {
+    height: 100%;
     width: 40vw;
   }
 }
-main .info_textos {
-  width: 40vw;
-  line-height: 1.4em;
+main .img-container .img {
+  max-height: 100%;
+  object-fit: cover;
+  object-position: center;
 }
-main .info_textos .info-title {
-  font-size: 2rem;
+main .info_textos {
   line-height: 1.4em;
+  width: 100%;
+}
+@media screen and (min-width: 767px) {
+  main .info_textos {
+    height: 100%;
+    width: 40vw;
+  }
 }
 main .beneficios-section {
   height: 60vh;
@@ -267,10 +327,8 @@ main .beneficios-section .beneficios .container p {
 }
 main .info-lugar-section {
   background-color: #191c1f;
-  height: 100vh;
   padding: 4em 1.5em;
   display: flex;
-  justify-content: center;
   align-items: center;
 }
 @media screen and (min-width: 767px) {
@@ -280,43 +338,36 @@ main .info-lugar-section {
     padding-right: 6em;
   }
 }
-main .info-lugar-section article {
-  width: 100%;
-  height: 100%;
-}
-main .info-lugar-section article .container {
-  height: 100%;
-  width: 100%;
+main .info-lugar-section .container {
   flex-direction: column;
-  align-items: center;
+  gap: 4em;
 }
 @media screen and (min-width: 767px) {
-  main .info-lugar-section article .container {
+  main .info-lugar-section .container {
     flex-direction: row;
-    align-items: center;
   }
 }
-main .info-lugar-section article .container .info_textos {
-  width: 100%;
+main .info-lugar-section .container .img-container .img {
+  box-shadow: -15px 15px #e82e2c;
 }
-main .info-lugar-section article .container .info_textos h4 {
+main .info-lugar-section .container .info_textos h4 {
   font-size: 1.2rem;
 }
-main .info-lugar-section article .container .info_textos h3 {
+main .info-lugar-section .container .info_textos h3 {
   font-size: 2rem;
+  line-height: 1.4;
   padding-bottom: 1em;
 }
-main .info-lugar-section article .container .info_textos div .check li {
+main .info-lugar-section .container .info_textos div .check li {
   font-size: 1.2rem;
   padding-bottom: 0.6em;
 }
-main .info-lugar-section article .container .info_textos div .check li .check-svg {
+main .info-lugar-section .container .info_textos div .check li .check-svg {
   width: 16px;
   height: 16px;
   display: inline;
 }
 main .info-dueño-section {
-  height: 100vh;
   padding: 4em 1.5em;
   display: flex;
   justify-content: center;
@@ -329,31 +380,25 @@ main .info-dueño-section {
     padding-right: 6em;
   }
 }
-main .info-dueño-section article {
-  width: 100%;
-  height: 100%;
-}
-main .info-dueño-section article .container {
-  height: 100%;
-  width: 100%;
+main .info-dueño-section .container {
   flex-direction: column;
-  align-items: center;
+  gap: 4em;
 }
 @media screen and (min-width: 767px) {
-  main .info-dueño-section article .container {
+  main .info-dueño-section .container {
     flex-direction: row;
-    align-items: center;
   }
 }
-main .info-dueño-section article .container .info_textos {
-  width: 100%;
-}
-main .info-dueño-section article .container .info_textos h4 {
+main .info-dueño-section .container .info_textos h4 {
   font-size: 1.2rem;
 }
-main .info-dueño-section article .container .info_textos h3 {
+main .info-dueño-section .container .info_textos h3 {
   font-size: 2rem;
+  line-height: 1.4;
   padding-bottom: 0.5em;
+}
+main .info-dueño-section .container .img-container .img {
+  box-shadow: 15px 15px #e82e2c;
 }
 main .final {
   background-image: linear-gradient(to right, rgba(5, 5, 5, 0.831372549) 50%, rgba(255, 255, 255, 0.1294117647)), url(../../images/final_mobile.jpg);

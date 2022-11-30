@@ -9,7 +9,11 @@
 }
 
 /* Evitamos problemas con las imagenes */
-img, picture, video, iframe, figure {
+img,
+picture,
+video,
+iframe,
+figure {
   max-width: 100%;
   width: 100%;
   display: block;
@@ -43,7 +47,21 @@ html {
 }
 
 /* Desactivamos estilos por defecto de las principales etiquetas de texto */
-h1, h2, h3, h4, h5, h6, p, span, a, strong, blockquote, i, b, u, em {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+a,
+strong,
+blockquote,
+i,
+b,
+u,
+em {
   font-size: 1em;
   font-weight: inherit;
   font-style: inherit;
@@ -52,14 +70,21 @@ h1, h2, h3, h4, h5, h6, p, span, a, strong, blockquote, i, b, u, em {
 }
 
 /* Evitamos problemas con los pseudoelementos de quotes */
-blockquote:before, blockquote:after, q:before, q:after {
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
   content: "";
   content: none;
 }
 
-
 /* Nivelamos problemas de tipografías y colocación de formularios */
-form, input, textarea, select, button, label {
+form,
+input,
+textarea,
+select,
+button,
+label {
   font-family: inherit;
   font-size: inherit;
   -webkit-hyphens: auto;
@@ -71,7 +96,9 @@ form, input, textarea, select, button, label {
 }
 
 /* Reseteamos las tablas */
-table, tr, td {
+table,
+tr,
+td {
   border-collapse: collapse;
   border-spacing: 0;
 }
