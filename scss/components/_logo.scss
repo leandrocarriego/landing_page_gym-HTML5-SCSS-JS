@@ -1,0 +1,15 @@
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 1em;
+  @include desktop {
+    justify-content: left;
+    padding-left: 6em;
+  }
+  .img-logo {
+    width: 20px;
+    height: 20px;
+    padding-right: 0.3em;
+  }
+}

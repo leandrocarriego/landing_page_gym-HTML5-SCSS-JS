@@ -4,11 +4,12 @@
 @import "./base/reset";
 @import "./base/typography";
 
-@import "./themes/theme";
-
-@import "./components/button";
-
-@import "./layout/navbar";
+@import "./layout/header";
 @import "./layout/footer";
 
+@import "./components/button";
+@import "./components/logo";
+
 @import "./pages/index";
+
+@import "./themes/theme";

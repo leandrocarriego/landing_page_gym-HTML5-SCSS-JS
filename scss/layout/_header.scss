@@ -1,0 +1,40 @@
+header {
+    .inicio {
+        background-image: 
+        linear-gradient(to right,$gradient_black_mobile 50% , $gradient_white_mobile),
+        url(../../images/header_mobile.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 100vh;
+        @include desktop {
+            background-image: 
+            linear-gradient(to right,$gradient_black_desktop 40% , $gradient_white_desktop),
+            url(../../images/header_desktop.jpg);
+        }
+        article {
+            .inicio-fondo-imagen {
+                padding: 1.5em;
+                margin-top: 2em;
+                @include desktop {
+                    padding-left: 6em;
+                    padding-right: 6em;
+                }
+                .presentacion {
+                    .titulo {
+                        font-size: 3.5rem;
+                        line-height: 1.4em;
+                    }
+                    .texto {
+                        padding-bottom: .2em;
+                    }
+                    @include desktop {
+                        width: 50vw;
+                        margin-top: auto;
+                        margin-bottom: auto;
+                    }
+                }
+            }
+        }
+    }
+}

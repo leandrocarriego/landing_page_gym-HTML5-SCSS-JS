@@ -1,7 +1,29 @@
 footer {
-  .pie-de-pagina {
-    color: var(--color_1);
+  .footer-container {
+    background-color: $color_5;
     height: 15vh;
     padding: 0 6em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    .img-logo {
+      width: 20px;
+      height: 20px;
+    }
+    .redes-container {
+      display: flex;
+      justify-content: space-between;
+      li {
+        a {
+          .svg{
+            display: inline;
+            width: 30px;
+            height: 30px;
+            margin: 20px;
+            padding: 0;
+          }
+        }
+      }
+    }
   }
 }
