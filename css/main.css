@@ -143,7 +143,6 @@ header .inicio {
 }
 header .inicio article .inicio-fondo-imagen {
   padding: 1.5em;
-  margin-top: 1em;
 }
 @media screen and (min-width: 767px) {
   header .inicio article .inicio-fondo-imagen {
