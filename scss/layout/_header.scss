@@ -8,6 +8,7 @@ header {
         background-position: center;
         
         @include desktop {
+            height: 100vh;
             background-image: 
             linear-gradient(to right,$gradient_black_desktop 40% , $gradient_white_desktop),
             url(../../images/header_desktop.jpg);

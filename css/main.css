@@ -137,6 +137,7 @@ header .inicio {
 }
 @media screen and (min-width: 767px) {
   header .inicio {
+    height: 100vh;
     background-image: linear-gradient(to right, rgba(5, 5, 5, 0.9019607843) 40%, rgba(255, 255, 255, 0.2)), url(../../images/header_desktop.jpg);
   }
 }
@@ -241,6 +242,12 @@ footer .final-footer .logo-container .img-logo {
   width: 20px;
   height: 20px;
 }
+footer a {
+  transition: 500ms ease all;
+}
+footer a:hover {
+  color: #cfcfcf;
+}
 
 .boton-rojo {
   background-color: #e82e2c;
@@ -248,12 +255,16 @@ footer .final-footer .logo-container .img-logo {
   display: inline-block;
   padding: 1em;
   margin-top: 1em;
+  transition: 500ms ease all;
 }
 .boton-rojo .svg {
   display: inline;
   width: 1em;
   height: 1em;
   padding-right: 0.1em;
+}
+.boton-rojo:hover {
+  color: #cfcfcf;
 }
 
 .logo-container {
@@ -319,6 +330,9 @@ main .beneficios-section {
 main .beneficios-section .beneficios {
   width: 100%;
   line-height: 2em;
+  opacity: 0;
+  transition: 0.7s ease-in-out all;
+  transform: translateY(40px);
 }
 @media screen and (min-width: 767px) {
   main .beneficios-section .beneficios {
@@ -366,10 +380,14 @@ main .info-lugar-section {
 main .info-lugar-section .container {
   flex-direction: column;
   gap: 4em;
+  opacity: 0;
+  transition: 0.7s ease-in-out all;
+  transform: translateX(-40px);
 }
 @media screen and (min-width: 767px) {
   main .info-lugar-section .container {
     flex-direction: row;
+    transform: translateX(-100px);
   }
 }
 main .info-lugar-section .container .img-container .img {
@@ -408,10 +426,14 @@ main .info-dueño-section {
 main .info-dueño-section .container {
   flex-direction: column;
   gap: 4em;
+  opacity: 0;
+  transition: 0.7s ease-in-out all;
+  transform: translateX(40px);
 }
 @media screen and (min-width: 767px) {
   main .info-dueño-section .container {
     flex-direction: row;
+    transform: translateX(100px);
   }
 }
 main .info-dueño-section .container .info_textos h4 {
@@ -447,29 +469,37 @@ main .final .final-container {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  opacity: 0;
+  transition: 0.7s ease-in-out all;
+  transform: translateY(50px);
 }
 @media screen and (min-width: 767px) {
   main .final .final-container {
     padding-left: 6em;
     padding-right: 6em;
+    transform: translateY(100px);
   }
 }
-main .final .final-container .presentacion {
+main .final .final-container .final-presentacion {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-main .final .final-container .presentacion .titulo {
+main .final .final-container .final-presentacion .titulo {
   font-size: 3.5rem;
   line-height: 1.4em;
   padding-bottom: 0.7em;
 }
 @media screen and (min-width: 767px) {
-  main .final .final-container .presentacion {
+  main .final .final-container .final-presentacion {
     max-width: 50vw;
     max-height: 90%;
   }
+}
+main .oculto.visible {
+  opacity: 1;
+  transform: translateX(0) translateY(0);
 }
 
 body {

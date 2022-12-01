@@ -8,7 +8,6 @@ main {
 
   .img-container {
     width: 100%;
-
     @include desktop {
       height: 100%;
       width: 40vw;
@@ -43,6 +42,9 @@ main {
     .beneficios {
       width: 100%;
       line-height: 2em;
+      opacity: 0;
+      transition: 0.7s ease-in-out all;
+      transform: translateY(40px);
       @include desktop {
         line-height: 1.6em;
       }
@@ -83,8 +85,12 @@ main {
     .container {
       flex-direction: column;
       gap: 4em;
+      opacity: 0;
+      transition: 0.7s ease-in-out all;
+      transform: translateX(-40px);
       @include desktop {
         flex-direction: row;
+        transform: translateX(-100px);
       }
       .img-container {
         .img {
@@ -130,8 +136,12 @@ main {
     .container {
       flex-direction: column;
       gap: 4em;
+      opacity: 0;
+      transition: 0.7s ease-in-out all;
+      transform: translateX(40px);
       @include desktop {
         flex-direction: row;
+        transform: translateX(100px);
       }
       .info_textos {
         h4 {
@@ -180,11 +190,15 @@ main {
       flex-direction: column;
       justify-content: center;
       align-items: center;
+      opacity: 0;
+      transition: 0.7s ease-in-out all;
+      transform: translateY(50px);
       @include desktop {
         padding-left: 6em;
         padding-right: 6em;
+        transform: translateY(100px);
       }
-      .presentacion {
+      .final-presentacion {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -200,5 +214,9 @@ main {
         }
       }
     }
+  }
+  .oculto.visible {
+    opacity: 1;
+    transform: translateX(0) translateY(0);
   }
 }

@@ -69,4 +69,11 @@ footer {
       }
     }
   }
+
+  a {
+    transition: 500ms ease all;
+    &:hover {
+      color: $color_2;
+    }
+  }
 }
