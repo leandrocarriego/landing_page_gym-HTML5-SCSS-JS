@@ -2,6 +2,8 @@
 
 Proyecto donde practique llevar a codigo un diseño ya armado, la version mobile la diseñe yo ya que el diseño original solo era desktop.
 
+- [VER DEPLOY](https://landing-page-gym.vercel.app/)
+
 ## Authors
 
 - [@leandrocarriego](https://github.com/leandrocarriego)
