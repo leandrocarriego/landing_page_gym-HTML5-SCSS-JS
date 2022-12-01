@@ -304,8 +304,7 @@ main .info_textos {
   }
 }
 main .beneficios-section {
-  height: 60vh;
-  padding: 1.5em;
+  padding: 4em 1.5em;
   display: flex;
   justify-content: center;
   align-items: center;
