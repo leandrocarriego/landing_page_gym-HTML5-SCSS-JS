@@ -285,9 +285,6 @@ footer a:hover {
   padding-right: 0.3em;
 }
 
-main {
-  overflow: hidden;
-}
 main .container {
   display: flex;
   justify-content: space-between;
