@@ -285,6 +285,9 @@ footer a:hover {
   padding-right: 0.3em;
 }
 
+main {
+  overflow: hidden;
+}
 main .container {
   display: flex;
   justify-content: space-between;
@@ -331,7 +334,7 @@ main .beneficios-section .beneficios {
   width: 100%;
   line-height: 2em;
   opacity: 0;
-  transition: 0.7s ease-in-out all;
+  transition: 0.5s ease-in-out all;
   transform: translateY(40px);
 }
 @media screen and (min-width: 767px) {
@@ -381,8 +384,8 @@ main .info-lugar-section .container {
   flex-direction: column;
   gap: 4em;
   opacity: 0;
-  transition: 0.7s ease-in-out all;
-  transform: translateX(-40px);
+  transition: 0.6s ease-in-out all;
+  transform: translateX(-10px);
 }
 @media screen and (min-width: 767px) {
   main .info-lugar-section .container {
@@ -427,8 +430,8 @@ main .info-dueño-section .container {
   flex-direction: column;
   gap: 4em;
   opacity: 0;
-  transition: 0.7s ease-in-out all;
-  transform: translateX(40px);
+  transition: 0.6s ease-in-out all;
+  transform: translateX(10px);
 }
 @media screen and (min-width: 767px) {
   main .info-dueño-section .container {
@@ -470,7 +473,7 @@ main .final .final-container {
   justify-content: center;
   align-items: center;
   opacity: 0;
-  transition: 0.7s ease-in-out all;
+  transition: 0.5s ease-in-out all;
   transform: translateY(50px);
 }
 @media screen and (min-width: 767px) {
